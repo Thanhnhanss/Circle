@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace ConsoleApplication2
 {
-    class Circle
+    class Circle1
     {
         private double radius;
         private string color;
-        public Circle()
+         public Circle1()
         {
             radius = 1.0;
             color = "red";
         }
-        public Circle(double r)
+        public Circle1(double r)
         {
             radius = r;
             color = "red";
@@ -28,7 +28,7 @@ namespace ConsoleApplication1
         {
             return radius * radius * Math.PI;
         }
-        public Circle(double radius, string color)
+        public Circle1(double radius, string color)
         {
             this.radius = radius;
             this.color = color;
