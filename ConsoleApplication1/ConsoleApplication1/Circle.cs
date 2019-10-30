@@ -10,44 +10,35 @@ namespace ConsoleApplication1
     {
         private double radius;
         private string color;
+
         public Circle()
         {
             radius = 1.0;
-            color = "red";
         }
         public Circle(double r)
         {
             radius = r;
-            color = "red";
         }
-        public double getRadius()
+        public void SetRadius(double radius)
+        {
+            this.radius = radius;
+        }
+        public double GetRadius()
         {
             return radius;
         }
-        public double getArea()
+        public double GetArea()
         {
             return radius * radius * Math.PI;
         }
-        public Circle(double radius, string color)
+        public double GetCircumference()
         {
-            this.radius = radius;
-            this.color = color;
-        }
-        public string GetColor()
-        {
-            return this.color;
-        }
-        public void SetRadius(double newRadius)
-        {
-            this.radius = newRadius;
-        }
-        public void SetColor(string newColor)
-        {
-            this.color = newColor;
+            return 2 * radius * Math.PI;
         }
         public override string ToString()
         {
-            return String.Format("Circle[radius={0},color={1}]", radius, color);
+            return String.Format("Circle[radius={0}]", radius);
+            //return base.ToString();
         }
     }
 }
