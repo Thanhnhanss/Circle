@@ -28,6 +28,26 @@ namespace ConsoleApplication1
         {
             return radius * radius * Math.PI;
         }
-
+        public Circle(double radius, string color)
+        {
+            this.radius = radius;
+            this.color = color;
+        }
+        public string GetColor()
+        {
+            return this.color;
+        }
+        public void SetRadius(double newRadius)
+        {
+            this.radius = newRadius;
+        }
+        public void SetColor(string newColor)
+        {
+            this.color = newColor;
+        }
+        public override string ToString()
+        {
+            return String.Format("Circle[radius={0},color={1}]", radius, color);
+        }
     }
 }
